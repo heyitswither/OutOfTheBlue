@@ -11,7 +11,7 @@ def is_connected():
 
 def main():
     player = Player()
-    player.add_song("it's the end of the world as we know it")
+    player.add_song("mr blue sky")
     player.start()
 
 if __name__ == "__main__":
