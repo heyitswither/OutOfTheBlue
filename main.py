@@ -12,7 +12,12 @@ def is_connected():
 def main():
     player = Player()
     player.add_song("mr blue sky")
+    while len(player.queue) < 1:
+        pass
+    player.add_song("aerosmith angel")
     player.start()
+    while player.looping and player.queue:
+        pass
 
 if __name__ == "__main__":
     main()
