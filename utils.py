@@ -8,7 +8,7 @@ def threaded(fn):
     return wrapper
 
 def filename_clean(filename):
-    return re.sub(r"\W", "_", filename).strip("_")
+    return re.sub(r"[\(\)]", "", re.sub(r"[& ]", "_", filename).strip("_"))
 
 def pifm(filename, freq='103.3', bitrate='22500', stereo=True, volume='4'):
     subprocess.call(['./pifm', filename, freq, bitrate, 'stereo' if stereo else 'mono', volume])

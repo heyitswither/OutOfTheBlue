@@ -7,4 +7,4 @@ class Song:
         self.name = self.video['title']
         self.length = self.video['duration']
         self.filename = utils.filename_clean(self.video['title']) + '.wav'
-        yt.download(title, self.filename)
+        yt.download(title, '%(title)s.%%(ext)s')

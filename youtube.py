@@ -7,7 +7,6 @@ opts = {"default_search": "ytsearch",
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'wav',
-            'preferredquality': '48000',
         }]}
 yt = youtube_dl.YoutubeDL
 
