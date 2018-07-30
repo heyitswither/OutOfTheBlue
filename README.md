@@ -1,6 +1,26 @@
 # OutOfTheBlue
 Just a little project using PiFM + Twilio
 
+### Usage:
+
+`sudo python3 main.py`
+
+ffmpeg needs to be in PATH, install youtube\_dl so that it is accessible with sudo (in /usr/local or virtualenv).
+
+[pifm](https://github.com/rm-hull/pifm) execuatable needs to be in this directory.
+
+You need to be running this on a raspberry pi.
+
+### TODO:
+
+- twilio integration
+- fill queue if offline
+- fill queue if no requests
+- only allow one request per person in queue
+- commands
+
+### Notes:
+
 So the gist is this: you'll text in whatever song you want to play and this'll play it on the radio.
 
 Will probably use youtube-dl and download whatever song people want played.
